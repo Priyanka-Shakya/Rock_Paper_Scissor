@@ -1,0 +1,71 @@
+<!-- Score Rules You Picked The House Picked You Win You Lose Play Again -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tic Tac Toa Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="backdrop visible"></div>
+    <div class="header">
+        <div class="title">
+            <div class="logo">ROCK <span>PAPER </span> SCISSOR</div>
+        </div>
+        <div class="show_data"> <span>SCORE</span>
+            <h2>12</h2>
+        </div>
+    </div>
+
+
+    <div class="faces-container">
+        <div class="face-box-1">
+            <div class="face-1 face"><img src="images/icon-paper.svg" alt=""></div>
+            <div class="face-2 face"><img src="images/icon-scissors.svg" alt=""></div>
+        </div>
+        <div class="face-box-2">
+            <div class="face-3 face"><img src="images/icon-rock.svg" alt=""></div>
+        </div>
+        <button class="start-btn">START GAME</button>
+    </div>
+
+
+    <div class="active_states">
+        <div class="active_face-box-1 active_faces">
+            <h3><input type="text" placeholder="Enter Your Choice" id="usrInput"></h3>
+            <div class="face-1 face"><img  class="player_face" src="" alt=""></div>
+        </div>
+        <div class="winner_decider">
+            <div class="winner_show_Container">
+               <h4> </h4>
+            </div>
+        </div>
+        <div class="active_face-box-2 active_faces">
+            <h3>Computer's choice</h3>
+            <div class="face-2 face"><img class="cp_face" src="" alt=""></div>
+        </div>
+    </div>
+    <button class="press_ok">lock choice</button>
+
+
+    <div class="rule_box">
+        <div class="rule-head">
+            <p>RULES</p>
+            <img src="images/icon-close.svg" alt="">
+        </div>
+        <div class="rules-img">
+            <img src="images/image-rules.svg" alt="">
+        </div>
+    </div>
+    <div class="rules_button">
+        <button>Rules</button>
+    </div>
+    <script src="Script/vendor.js"></script>
+    <script src="Script/app.js"></script>
+</body>
+
+</html>
